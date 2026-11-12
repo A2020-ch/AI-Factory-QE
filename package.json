@@ -1,0 +1,24 @@
+{
+  "name": "hybrid-ai-factory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Durable orchestration core for specification-driven API and web automation",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "demo": "npm run build && node dist/demo.js"
+  },
+  "dependencies": {
+    "@github/copilot-sdk": "^1.0.29",
+    "@temporalio/client": "^1.25.0",
+    "@temporalio/worker": "^1.25.0",
+    "@temporalio/workflow": "^1.25.0"
+  },
+  "devDependencies": {
+    "@temporalio/testing": "^1.25.0",
+    "@types/node": "^24.10.0",
+    "typescript": "^5.9.3"
+  }
+}

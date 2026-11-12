@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+coverage/
+
+# Local session data and nested repositories are not part of this project
+/temp-copilot-home/
+/Reto1_Playwright_Web_Automation/
+/HYBRID AI FACTORY
